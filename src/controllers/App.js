@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
-import { connect } from 'react-redux'
 import { compose, bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
 import * as appActions from '../actions/appActions'
 console.log(appActions)
@@ -50,8 +50,14 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return{
+    user: state.appReducer.get('user')
+  }
+}
+
 const containerAction = dispatch => {
-  console.log(appActions, dispatch)
+  // console.log(appActions, dispatch)
   // const actions = bindActionCreators({ appActions })
   return { 
     actions: bindActionCreators(appActions, dispatch)
@@ -59,5 +65,5 @@ const containerAction = dispatch => {
 }
 
 export default compose(
-  connect(containerAction)
+  connect(mapStateToProps, containerAction)
 )(App)
