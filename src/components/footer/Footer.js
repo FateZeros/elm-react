@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
-import './Footer.css'
+import styles from './Footer.scss'
 
 class Footer extends Component {
 	render() {
 		return (
-			<ul className="footer">
-				<li className="footer-item">外卖</li>
-				<li className="footer-item">发现</li>
-				<li className="footer-item">订单</li>
-				<li className="footer-item">我的</li>
+			<ul className={styles.footer}>
+				<li className={styles.footerItem}>外卖</li>
+				<li className={styles.footerItem}>发现</li>
+				<li className={styles.footerItem}>订单</li>
+				<li className={styles.footerItem}>我的</li>
 			</ul>
 		)
 	}

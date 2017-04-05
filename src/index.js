@@ -5,12 +5,12 @@ import { Provider } from 'react-redux'
 import App from './controllers/App'
 import store from './utils/createStore'
 
-import './index.css'
+import './index.scss'
 
 const app = document.getElementById('root')
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App className="root"/>
+		<App />
 	</Provider>, app 
 )

@@ -113,6 +113,8 @@ module.exports = {
           // https://github.com/facebookincubator/create-react-app/issues/1713
           /\.(js|jsx)(\?.*)?$/,
           /\.css$/,
+          // /\.less$/,
+          /\.scss$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -144,6 +146,48 @@ module.exports = {
         test: /\.css$/,
         loader: 'style!css?importLoaders=1!postcss'
       },
+      // {
+      //   test: /\.less$/,
+      //   loader: ExtractTextPlugin.extract({
+      //     fallbackLoader: 'style',
+      //     loader: [
+      //       {
+      //         loader: 'css',
+      //         query: {
+      //           modules: true,
+      //           sourceMap: true,
+      //           localIdentName: '[hash:base64:5]',
+      //         },
+      //       },
+      //       {
+      //         loader: 'less',
+      //         query: {
+      //           sourceMap: true,
+      //         }
+      //       },
+      //       'postcss'
+      //     ],
+      //   }),
+      //   include: paths.appSrc
+      // },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'css?sourceMap&modules&localIdentName=[name]__[local]___[hash:base64:5]!' +
+          'postcss!' +
+          'sass?{"sourceMap": true}'
+        ),
+        include: paths.appSrc
+      },
+      // {
+      //   test: /\.less$/,
+      //   loader: ExtractTextPlugin.extract(
+      //     'css?sourceMap&modules&localIdentName=[name]__[local]___[hash:base64:5]!' +
+      //     'postcss!' +
+      //     'less?{"sourceMap": true}'
+      //   ),
+      //   include: paths.appSrc
+      // },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
       {
@@ -187,6 +231,12 @@ module.exports = {
       inject: true,
       template: paths.appHtml,
     }),
+
+    new ExtractTextPlugin('[name].css', {
+      disable: false,
+      allChunks: true
+    }),
+
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'development') { ... }. See `./env.js`.
     new webpack.DefinePlugin(env.stringified),
