@@ -11,6 +11,6 @@ const app = document.getElementById('root')
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App />
+		<App className="root"/>
 	</Provider>, app 
 )

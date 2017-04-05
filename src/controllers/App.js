@@ -3,10 +3,11 @@ import { compose, bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import * as appActions from '../actions/appActions'
-console.log(appActions)
-// import { appActions } from '../actions/appActions'
 // import logo from '../asserts/logo.svg'
 import styles from './App.css'
+
+import AppView from '../views/appView'
+import Footer from '../components/footer'
 
 class App extends Component {
   constructor() {
@@ -19,32 +20,20 @@ class App extends Component {
 
   static propTypes = {
     user: PropTypes.string,
-    updateUser: PropTypes.func
-  }
-
-  componentDidMount() {
-    console.log(this.props.actions)
-  }
-
-  handleClick = () => {
-    this.props.actions.updateUser('FJY')
+    actions: PropTypes.shape({
+      updateUser: PropTypes.func
+    })
   }
 
   render() {
     return (
       <div className={styles.app}>
-        <div className={styles.appHeader}>
-          <h2>Welcome to React</h2>
-        </div>
-        <p className={styles.appIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          {this.state.user}-{this.props.user}
-        </p>
-        <div onClick={this.handleClick}>
-          点我点我
-        </div>
+        { this.state.user }
+        <AppView
+          user={this.props.user}
+          actions={this.props.actions}
+        />
+        <Footer />
       </div>
     )
   }
@@ -56,14 +45,12 @@ const mapStateToProps = state => {
   }
 }
 
-const containerAction = dispatch => {
-  // console.log(appActions, dispatch)
-  // const actions = bindActionCreators({ appActions })
+const mapActionToProps = dispatch => {
   return { 
     actions: bindActionCreators(appActions, dispatch)
   }
 }
 
 export default compose(
-  connect(mapStateToProps, containerAction)
+  connect(mapStateToProps, mapActionToProps)
 )(App)

@@ -1,10 +1,9 @@
 import createReducer from '../utils/createReducer'
 import * as appActions from '../actions/appActions'
 import { fromJS } from 'immutable'
-console.log(appActions)
 
 const initialState = fromJS({
-  user: ''
+  user: '好好 '
 })
 
 // const appReducer = (state = initialState, action) => {
@@ -20,7 +19,7 @@ const initialState = fromJS({
 
 const actionHandlers = {
   [appActions.UPDATE_USER]: (state, { payload }) => {
-    console.log(payload)
+    // console.log(payload)
     return state.set('user', payload)
   }
 }
