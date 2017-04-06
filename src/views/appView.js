@@ -18,9 +18,6 @@ class AppView extends Component {
 				<div className={styles.appHeader}>
           <h2>Welcome to React</h2>
         </div>
-        <p className={styles.appIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <p>
           {this.props.user}
         </p>
