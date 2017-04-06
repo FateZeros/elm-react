@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100%;
 	height: 50px;
-	line-height: 50px;
+	// line-height: 50px;
 	bottom: 0;
 	/*left: 0;*/
 	text-align: center;
@@ -15,4 +15,67 @@
 .footerItem {
 	height: 50px;
 	flex: 1;
+	color: #cdcdcd;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+.sellsItem {
+	width: 100%;
+	height: 24px;
+	background: url(src/asserts/elm.png) no-repeat center;
+	background-size: 24px 24px;
+}
+
+.selectedSells {
+	color: #1296db;
+	.sellsItem {
+		background: url(src/asserts/elm-active.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+}
+
+.findsItem {
+	width: 100%;
+	height: 24px;
+	background: url(src/asserts/finds.png) no-repeat center;
+	background-size: 24px 24px;
+}
+
+.selectedFinds {
+	color: #1296db;
+	.findsItem {
+		background: url(src/asserts/finds-active.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+}
+
+.ordersItem {
+	width: 100%;
+	height: 24px;
+	background: url(src/asserts/order.png) no-repeat center;
+	background-size: 24px 24px;
+}
+
+.selectedOrders {
+	color: #1296db;
+	.ordersItem {
+		background: url(src/asserts/order-active.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+}
+
+.minesItem {
+	width: 100%;
+	height: 24px;
+	background: url(src/asserts/mine.png) no-repeat center;
+	background-size: 24px 24px;
+}
+
+.selectedMines {
+	color: #1296db;
+	.minesItem {
+		background: url(src/asserts/mine-active.png) no-repeat center;
+		background-size: 24px 24px;
+	}
 }
