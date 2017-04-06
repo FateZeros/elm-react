@@ -1,0 +1,46 @@
+.toolbars {
+	width: 100%;
+	background: rgb(32, 184, 255);
+}
+
+.minesInfo {
+	width: 100%;
+	background: rgb(32, 184, 255);
+	display: flex;
+	padding: 10px;
+}
+
+.myImg {
+	width: 60px;
+	height: 60px;
+
+	img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		border: 1px solid #eee;
+	}
+}
+
+.myBrief {
+	flex: 1;
+	height: 60px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	padding-left: 20px;
+}
+
+.myName {
+	line-height: 30px;
+}
+
+.myPhone {
+	line-height: 30px;
+}
+
+.rightArrow {
+	height: 60px;
+	width: 40px;
+	background: url(src/asserts/right-arrow.png) no-repeat center;
+	background-size: 32px 32px;
+}

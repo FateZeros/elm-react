@@ -1,8 +1,17 @@
 import React, { Component, PropTypes } from 'react'
 
-import styles from './appView.css'
+import Footer from 'src/components/footer'
+import styles from './FindsView.scss'
 
-class AppView extends Component {
+class FindsView extends Component {
+	constructor() {
+		super()
+
+		this.state = {
+			content: '发现首页'
+		}
+	}
+
 	static propTypes = {
 		user: PropTypes.string.isRequired,
 		actions: PropTypes.object.isRequired
@@ -15,8 +24,8 @@ class AppView extends Component {
 	render() {
 		return (
 			<div>
-				<div className={styles.appHeader}>
-          <h2>Welcome to React</h2>
+				<div className={styles.header}>
+          <h2>{this.state.content}</h2>
         </div>
         <p>
           {this.props.user}
@@ -24,9 +33,10 @@ class AppView extends Component {
         <div onClick={this.handleClick}>
           点我点我 
         </div>
+        <Footer />
 			</div>
 		)
 	}
 }
 
-export default AppView
+export default FindsView

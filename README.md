@@ -1,11 +1,11 @@
-# 项目运行
-
-# keys
-webpack + react + react-router 4.0 + redux
-
+## 项目运行
 ```
 npm install 
 ```
+
+## keys
+webpack + react + react-router 4.0 + redux
+
 
 ## 项目测试用例
 ```

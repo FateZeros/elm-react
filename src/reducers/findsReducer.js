@@ -1,5 +1,5 @@
-import createReducer from '../utils/createReducer'
-import * as appActions from '../actions/appActions'
+import createReducer from 'src/utils/createReducer'
+import * as findsActions from 'src/actions/findsActions'
 import { fromJS } from 'immutable'
 
 const initialState = fromJS({
@@ -18,7 +18,7 @@ const initialState = fromJS({
 // }
 
 const actionHandlers = {
-  [appActions.UPDATE_USER]: (state, { payload }) => {
+  [findsActions.UPDATE_USER]: (state, { payload }) => {
     // console.log(payload)
     return state.set('user', payload)
   }

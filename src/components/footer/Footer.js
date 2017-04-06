@@ -5,7 +5,6 @@ import styles from './Footer.scss'
 
 class Footer extends Component {
 	render() {
-		console.log(this.props.match)
 		return (
 			<ul className={styles.footer}>
 				<li className={styles.footerItem}><Link to="/sells">外卖</Link></li>
