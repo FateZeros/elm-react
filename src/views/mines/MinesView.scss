@@ -1,13 +1,56 @@
+.root {
+	background: #f2f2f2;
+	padding-bottom: 50px;
+}
+
 .toolbars {
 	width: 100%;
+	height: 40px;
 	background: rgb(32, 184, 255);
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	display: flex;
+	padding: 5px 15px;
+	text-align: center;
+}
+
+.ring {
+	width: 32px;
+	background: url(src/asserts/ring.png) no-repeat center;
+	background-size: 28px 28px;
+	position: relative;
+}
+
+.ringNum {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 50%;
+	right: -6px;
+	bottom: 0;
+	background: rgb(240, 0, 0);
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.mine {
+	flex: 1;
+	line-height: 30px;
+}
+
+.setting {
+	width: 32px;
+	background: url(src/asserts/setting.png) no-repeat center;
+	background-size: 24px 24px;
 }
 
 .minesInfo {
 	width: 100%;
 	background: rgb(32, 184, 255);
 	display: flex;
-	padding: 10px;
+	padding: 10px 10px 10px 20px;
 }
 
 .myImg {
@@ -28,19 +71,207 @@
 	color: rgb(255, 255, 255);
 	text-align: left;
 	padding-left: 20px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
 }
 
 .myName {
+	height: 30px;
 	line-height: 30px;
 }
 
 .myPhone {
+	height: 30px;
 	line-height: 30px;
+	display: flex;
 }
 
-.rightArrow {
+.myPhoneImg {
+	margin: auto;
+	width: 16px;
+	height: 16px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position: 0 -182px;
+}
+
+.phoneNum {
+	flex: 1;
+	padding-left: 4px;
+}
+
+.rightArrowWhite {
+	height: 32px;
+	width: 32px;
+	background: url(src/asserts/right-arrow32.png) no-repeat;
+	background-position: 0 0;
+}
+
+.rightArrowGrey {
+	height: 32px;
+	width: 32px;
+	background: url(src/asserts/right-arrow32.png) no-repeat;
+	background-position: 0 -42px;
+	margin: auto 0;
+}
+
+.minesBrief {
+	width: 100%;
 	height: 60px;
-	width: 40px;
-	background: url(src/asserts/right-arrow.png) no-repeat center;
-	background-size: 32px 32px;
+	display: flex;
+	background: #fff;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.myMoney {
+	flex: 1;
+	height: 40px;
+	border-right: 1px solid #eee;
+
+	p:first-child {
+		color: #e98f36;
+	}
+
+	span {
+		font-size:18px;
+		font-weight: bold;
+	}
+}
+
+.myPrivilege {
+	flex: 1;
+	height: 40px;
+	border-right: 1px solid #eee;
+
+	p:first-child {
+		color: #d81e06;
+	}
+
+	span {
+		font-size:18px;
+		font-weight: bold;
+	}
+}
+
+.myIntegral {
+	flex: 1;
+	height: 40px;
+
+	p:first-child {
+		color: #1afa29;
+	}
+
+	span {
+		font-size:18px;
+		font-weight: bold;
+	}
+}
+
+.addrCont, .shopCont, .serviceCont {
+	margin-top: 12px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+}
+
+.myAddr, .myCollect, .myRecommend, .myShop, .myMember, .myService, .myGrade, .myJoin {
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+
+.myAddrImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -26px;
+}
+
+.myAddrInfo {
+	flex: 1;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	border-bottom: 1px solid #eee;
+}
+
+.myRecommendInfo {
+	flex: 1;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	border-bottom: 1px solid #eee;
+	display: flex;
+}
+
+.myRecommendTip {
+	width: 100px;
+	height: 50px;
+}
+
+.myRecommendBrief {
+	flex: 1;
+	text-align: right;
+	color: #aeaeae;
+}
+
+.myCollectImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 0;
+}
+
+.myRecommendImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -130px;
+}
+
+.myShopImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -156px;
+}
+
+.myMemberImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -78px;
+}
+
+.myServiceImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -208px;
+}
+
+.myGradeImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -52px;
+}
+
+.myJoinImg {
+	width: 16px;
+	height: 16px;
+	margin: auto 10px;
+	background: url(src/asserts/mines-icon16.png) no-repeat;
+	background-position:0 -104px;
 }
