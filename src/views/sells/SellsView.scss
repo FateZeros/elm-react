@@ -1,0 +1,163 @@
+.root {
+	background: #f0f0f0;
+	padding-bottom: 50px;
+}
+
+.searchCont {
+	width: 100%;
+	height: 150px;
+	background: #1182fe;
+	// position: relative;
+	padding: 5px 10px;
+}
+
+.sellsKindsCont {
+	width: 100%;
+	height: 180px;
+	background: #fff;
+	padding-bottom: 20px;
+}
+
+.sellKindsPage {
+	width: 100%;
+	height: 160px;
+	padding:0 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sellKindsItem {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	margin-top: 10px;
+}
+
+.kinds {
+	flex: 1;
+	height: 70px;
+	text-align: center;
+	position: relative;
+
+	img {
+		width: 50px;
+		height: 50px;
+	}
+
+	p {
+		font-size: 12px;
+		margin-top: 0;
+		color: #909090;
+	}
+}
+
+.kindTag {
+	position: absolute;
+	width: 30px;
+	height: 15px;
+	line-height: 15px;
+	top: 0;
+	right: 10px;
+	background: #fb0413;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 10px;
+}
+
+.adsCont {
+	width: 100%;
+	height: 140px;
+	background: #fff;
+}
+
+.adsPage {
+	width: 100%;
+	height: 140px;
+	padding: 10px;
+
+	img {
+		width: 100%;
+		height: 120px;
+	}
+}
+
+.sellsIntro {
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.sellsIntroRow {
+	width: 100%;
+	height: 70px;
+	display: flex;
+}
+
+.sellsIntroRow:first-child {
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.sellsIntroItem {
+	flex: 1;
+	height: 70px;
+	display: flex;
+}
+
+.sellsIntroFont {
+	height: 70px;
+	flex: 1;
+	text-align: center;
+	padding: 10px 0;
+	line-height: 25px;
+
+	p:first-child {
+		font-size: 18px;
+	}
+
+	p:last-child {
+		font-size: 12px;
+		color: #adadad;
+	}
+}
+
+.sellsIntroItem:nth-child(odd) {
+	border-right: 1px solid #e3e3e3;
+}
+
+.sellsIntroImg {
+	width: 80px;
+	height: 70px;
+	position: relative;
+
+	img {
+		width: 60px;
+		height: 60px;
+		margin: 5px;
+	}
+}
+
+.sellsIntroTag {
+	position: absolute;
+	width: 40px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	top: 10px;
+	right: 4px;
+	background: #fb0413;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 10px;
+}
+
+.sellsLimitTime {
+	width: 100%;
+	height: 160px;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.sellsLimitTips {
+	width: 100%;
+	height: 30px;
+}
