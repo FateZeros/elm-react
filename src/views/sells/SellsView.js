@@ -39,38 +39,38 @@ class SellsView extends Component {
 	          <div className={styles.sellKindsPage}>
 	          	<div className={styles.sellKindsItem}>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg1}/>
+	          			<img src={kindImg1} alt="" />
 	          			<p>美食</p>
 	          			<div className={styles.kindTag}>hot</div>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg2}/>
+	          			<img src={kindImg2} alt="" />
 	          			<p>甜品饮品</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg3}/>
+	          			<img src={kindImg3} alt="" />
 	          			<p>商店超市</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg4}/>
+	          			<img src={kindImg4} alt="" />
 	          			<p>预定早餐</p>
 	          		</div>
 	          	</div>
 	          	<div className={styles.sellKindsItem}>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg5}/>
+	          			<img src={kindImg5} alt="" />
 	          			<p>果蔬生鲜</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg6}/>
+	          			<img src={kindImg6} alt="" />
 	          			<p>新店特惠</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg7}/>
+	          			<img src={kindImg7} alt="" />
 	          			<p>准时达</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg2}/>
+	          			<img src={kindImg2} alt="" />
 	          			<p>下午茶</p>
 	          		</div>
 	          	</div>
@@ -78,38 +78,38 @@ class SellsView extends Component {
 	          <div className={styles.sellKindsPage}>
 	          	<div className={styles.sellKindsItem}>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg1}/>
+	          			<img src={kindImg1} alt="" />
 	          			<p>土豪推荐</p>
 	          			<div className={styles.kindTag}>0元</div>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg2}/>
+	          			<img src={kindImg2} alt="" />
 	          			<p>鲜花蛋糕</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg3}/>
+	          			<img src={kindImg3} alt="" />
 	          			<p>汉堡</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg5}/>
+	          			<img src={kindImg5} alt="" />
 	          			<p>日韩料理</p>
 	          		</div>
 	          	</div>
 	          	<div className={styles.sellKindsItem}>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg4}/>
+	          			<img src={kindImg4} alt="" />
 	          			<p>麻辣烫</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg6}/>
+	          			<img src={kindImg6} alt="" />
 	          			<p>披萨拉面</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg7}/>
+	          			<img src={kindImg7} alt="" />
 	          			<p>川湘菜</p>
 	          		</div>
 	          		<div className={styles.kinds}>
-	          			<img src={kindImg2}/>
+	          			<img src={kindImg2} alt="" />
 	          			<p>包子粥店</p>
 	          		</div>
 	          	</div>
@@ -118,16 +118,16 @@ class SellsView extends Component {
 
 	      <ReactSwipe className={styles.adsCont} swipeOptions={adsOptions}>
 	      	<div className={styles.adsPage}>
-	      		<img src={adsImg1} />
+	      		<img src={adsImg1} alt="" />
 	      	</div>
 	      	<div className={styles.adsPage}>
-	      		<img src={adsImg1} />
+	      		<img src={adsImg1} alt="" />
 	      	</div>
 	      	<div className={styles.adsPage}>
-	      		<img src={adsImg1} />
+	      		<img src={adsImg1} alt="" />
 	      	</div>
 	      	<div className={styles.adsPage}>
-	      		<img src={adsImg1} />
+	      		<img src={adsImg1} alt="" />
 	      	</div>
 	      </ReactSwipe>
 	      
@@ -139,7 +139,7 @@ class SellsView extends Component {
 	      				<p>周五半价日</p>
 	      			</div>
 	      			<div className={styles.sellsIntroImg}>
-	      				<img src={food1} />
+	      				<img src={food1} alt="" />
 	      				<div className={styles.sellsIntroTag}>半价日</div>
 	      			</div>
 	      		</div>
@@ -149,7 +149,7 @@ class SellsView extends Component {
 	      				<p>领取20元红包</p>
 	      			</div>
 	      			<div className={styles.sellsIntroImg}>
-	      				<img src={food1} />
+	      				<img src={food1} alt="" />
 	      			</div>
 	      		</div>
 	      	</div>
@@ -160,7 +160,7 @@ class SellsView extends Component {
 	      				<p>15元吃饱</p>
 	      			</div>
 	      			<div className={styles.sellsIntroImg}>
-	      				<img src={food1} />
+	      				<img src={food1} alt="" />
 	      			</div>
 	      		</div>
 	      		<div className={styles.sellsIntroItem}>
@@ -169,7 +169,7 @@ class SellsView extends Component {
 	      				<p>低至5折</p>
 	      			</div>
 	      			<div className={styles.sellsIntroImg}>
-	      				<img src={food1} />
+	      				<img src={food1} alt="" />
 	      			</div>
 	      		</div>
 	      	</div>
