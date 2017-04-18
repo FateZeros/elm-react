@@ -5,7 +5,7 @@ npm install
 
 ## keys
 ```
-webpack + react + react-router 4.0 + redux
+webpack + react + react-router 4.0 + redux + mongoose + express
 ```
 
 ## swipe
@@ -14,6 +14,10 @@ npm install --save-dev swipe-js-iso react-swipe
 <!-- npm install --save-dev react-swipeable-views -->
 ```
 
+## mongodb + express
+```
+npm install express mongoose nodemon --save
+```
 
 ## 项目测试用例
 ```
